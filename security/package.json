@@ -1,0 +1,42 @@
+{
+  "name": "security",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --forceExit",
+    "generate": "tsc && node lib",
+    "source": "tsc && node lib/copySource",
+    "run": "tsc && node lib/copySource && tsc && node lib",
+    "deploy": "firebase deploy --only firestore"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "preset": "ts-jest"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "semi": true
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash": "^4.14.168",
+    "lodash": "^4.17.20",
+    "purify-ts": "^0.16.0"
+  },
+  "devDependencies": {
+    "@firebase/testing": "^0.20.4",
+    "@types/jest": "^26.0.3",
+    "jest": "^26.1.0",
+    "jest-environment-node": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.5",
+    "prettier": "^2.0.5",
+    "tslint": "^5.12.0"
+  }
+}

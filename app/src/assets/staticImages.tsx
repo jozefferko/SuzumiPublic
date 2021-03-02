@@ -1,0 +1,13 @@
+export const swoopLogo = require('./swoop_logo.png');
+export const suzumiLogo = require('./suzumi_logo.png');
+export const suzumiText = require('./suzumi_text.png');
+export const suzumiIcon = require('./suzumi_icon.png');
+export const qrLogo = require('./qr_logo.png');
+export const defaultProfile = require('./defaultProfile.jpg');
+export const banner = require('./banner.png');
+export const defaultImage = require('./no-image.png');
+export const bookRanders = require('./bookRanders.jpg');
+export const bookAalborg = require('./bookAalborg.png');
+export const orderRanders = require('./orderRanders.png');
+export const orderAalborg = require('./orderAalborg.png');
+export const contestImage = require('./contestImage.jpg');

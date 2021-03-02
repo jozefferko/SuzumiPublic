@@ -1,0 +1,435 @@
+{
+    "indexes": [
+        {
+            "collectionGroup": "purchases",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "user",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "purchased",
+                    "mode": "DESCENDING"
+                }
+            ]
+        }, {
+            "collectionGroup": "transactions",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "type",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "timestamp",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "transactions",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "user",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "timestamp",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [ 
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [ 
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`0`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`1`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`2`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`3`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`4`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`5`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`6`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`7`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`8`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`9`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "DESCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`0`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`1`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`2`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`3`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`4`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`5`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`6`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`7`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`8`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "users",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "flags",
+                    "mode": "ARRAY_CONTAINS"
+                },
+                {
+                    "fieldPath": "searchIndex.`9`",
+                    "mode": "ASCENDING"
+                },
+                {
+                    "fieldPath": "created",
+                    "mode": "ASCENDING"
+                }
+            ]
+        }
+    ],
+
+    "fieldOverrides": []
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Suzumi</string>
+    <string name="facebook_app_id">333193071366509</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">aizBoHi6jlI60c_NftalsmCsu6M3p6_N1RU6U</string>
+</resources>

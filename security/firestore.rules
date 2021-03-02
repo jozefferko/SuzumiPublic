@@ -1,0 +1,111 @@
+rules_version = '2';
+service cloud.firestore {
+    match /databases/{database}/documents {
+        match /offers/{offer} {
+            allow read: if true;
+            allow write: if
+            authenticated() && owner();
+        }
+
+        match /users/{user} {
+            allow get: if
+            authenticated() && user==uid();
+            allow create: if
+            authenticated() && user==uid() && d().balance == 0 && d().keys().length==0;
+            allow update: if
+            authenticated() && user==uid() && restrictedFields(['balance', 'recentPoints']);
+            allow read: if
+            authenticated() && owner();
+            allow write: if
+            authenticated() && owner();
+        }
+        match /products/{product} {
+            allow read: if true;
+            allow write: if
+            authenticated() && owner();
+        }
+        match /purchases/{purchase} {
+            allow read: if true;
+            allow write: if
+            authenticated() && (owner() || d().user==uid());
+        }
+        match /contest/{entries} {
+            allow read: if true;
+            allow write: if
+            authenticated() && (owner() || d().user==uid());
+        }
+        match /transactions/{transaction} {
+            allow read: if
+            authenticated() && (owner() || d().user==uid());
+            allow write: if
+            authenticated() && owner();
+        }
+        match /config/restaurant {
+            allow read: if
+            true;
+            allow write: if
+            authenticated() && owner();
+
+        }
+        match /config/cache {
+            allow read: if
+            true;
+            allow write: if
+            authenticated() && owner();
+        }
+
+        match /config/stats {
+            allow read: if
+            true;
+            allow write: if
+            authenticated() && owner();
+        }
+
+        function d() {
+            return request.resource.data;
+        }
+        function uid() {
+            return request.auth.uid;
+        }
+        function restrictedFields() {
+            return (!request.resource.data.diff(resource.data).affectedKeys()
+            .hasAny());
+        }
+
+        function authenticated() {
+            return request.auth != null;
+        }
+
+        function owner() {
+            return request.auth.token.role in ['owner','employee'];
+        }
+
+        //CUSTOM_RULES
+        //        function I0p(r) {
+        //            return r is int && r >= 0;
+        //        }
+        //        function Ip(r) {
+        //            return r is int && r > 0;
+        //        }
+        //        function I(r) {
+        //            return r is int;
+        //        }
+        //        function F0p(r) {
+        //            return r is number && r >= 0;
+        //        }
+        // function Index(r) {
+        //     return r is int && r >= -1;
+        // }
+        //        function Year(r) {
+        //            return r is int && r > 1900 && r < 10000;
+        //        }
+        //        function Month(r) {
+        //            return r is int && r > 0 && r <= 12;
+        //        }
+        //        function Day(r) {
+        //            return r is int && r > 0 && r <= 31;
+        //        }
+
+        //AUTO_RULES
+    }
+}
