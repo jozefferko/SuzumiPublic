@@ -1,13 +1,4 @@
-# ardent
-loyalty app
+# Suzumi
+A fully featured loyalty program powered by Firebase for the restaurant Suzumi. I have been working on it for 2 months as the only developer.
 
-# project setup
-1. [download and install node](https://nodejs.org/en/)
-2. [download the webstorm IDE](https://www.jetbrains.com/webstorm/), use a free trial or get a student license
-3. [download github for desktop](https://desktop.github.com)
-4. use github for desktop to clone this repository
-
-# running the dashboard
-1. open the dashboard folder in webstorm, be carefull not to open the entire project, only the dashboard folder
-2. open the npm tab (bottom left)
-3. select start, the website will automatically open in a browser, (migth take a few minutes the first time around)
+The app is in beta right now but you can download it [here](https://apps.apple.com/us/app/suzumi/id1553852621), or just check out some screenshots for [the app](https://photos.app.goo.gl/vNgo2kPt9is1e4NZ6) and [the dashboard](https://photos.app.goo.gl/JsoeFojU1K2M7bXD8) to get an idea of how it works. The functions folder contains the NodeJS backend of this app.
